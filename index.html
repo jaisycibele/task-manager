@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href=".//css/style.css">
+    <script src=".//js/script.js" defer></script>
+</head>
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+    <label for="author">Autor:</label>
+    <input type="text" id="author">
+    <label for="description">Descrição:</label>
+    <input type="text" id="description">
+    <label for="department">Departamento:</label>
+    <input type="text" id="department">
+    <label for="importance">Importância:</label>
+    <select id="importance">
+        <option value="1">1 - Baixa</option>
+        <option value="2">2 - Média</option>
+        <option value="3">3 - Alta</option>
+    </select>
+    <button id="addTask">Adicionar Tarefa</button>
+    <button id="clearTable">Limpar Tabela</button>
+    <button id="addValue">Adicionar Campo Valor</button>
+    <button id="addDuration">Adicionar Campo Duração</button>
+    <button id="orderByImportance">Ordenar por Importância</button>
+    <h2>Tarefas:</h2>
+    <table id="taskTable">
+        <tr>
+            <th>Autor</th>
+            <th>Descrição</th>
+            <th>Departamento</th>
+            <th>Importância</th>
+            <th>Valor</th>
+            <th>Duração</th>
+            <th>Excluir</th>
+        </tr>
+    </table>
